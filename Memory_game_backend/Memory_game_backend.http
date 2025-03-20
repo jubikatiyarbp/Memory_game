@@ -1,0 +1,6 @@
+@Memory_game_backend_HostAddress = http://localhost:5109
+
+GET {{Memory_game_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
