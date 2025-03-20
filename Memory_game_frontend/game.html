@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="css/gameStyle.css">
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+  <div id="navbar-container">
+    <div class="navbar">
+      <div class="nav-left">
+          <h2>MG</h2>
+          <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="leaderboard.html">Leaderboard</a>
+          </div>
+      </div>
+      <div class="nav-right">
+          <button id="loginBtn">Login/Signup</button>
+          <button id="logoutBtn" style="display: none;">Logout</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="game-container">
+      <!-- Time Remaining and Score Display -->
+      <div id="game-info">
+        <p><i class="fas fa-stopwatch"></i> <span id="time-remaining">Time Remaining: 0:00</span></p>
+        <p><i class="fas fa-star"></i> <span id="score-display">Score: 0</span></p>
+      </div>
+
+      <!-- Game canvas -->
+      <canvas id="gameCanvas" ></canvas>
+
+      <div id="buttons">
+        <button id="start-btn" class="start-btn">Start Game</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/gameScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+<body>
+    <div id="navbar-container">
+        <div class="navbar">
+            <div class="nav-left">
+                <h2>MG</h2>
+                <div class="nav-links">
+                    <a href="index.html" id="homeLink">Home</a>
+                    <a href="leaderboard.html">Leaderboard</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="loginBtn">Login/Signup</button>
+                <button id="logoutBtn" style="display: none;">Logout</button>
+            </div>
+        </div> 
+    </div>
+    <div class="main-container">
+
+        <!-- Floating Icons -->
+        <i class="fas fa-coins icon coin"></i>
+        <i class="fas fa-layer-group icon cards"></i>
+        <i class="fas fa-star icon star"></i>
+
+        <!-- Floating Plus Signs -->
+        <span class="plus">+</span>
+        <span class="plus">+</span>
+
+        <h2>Memory Challenge!</h2>
+        <h4>Test your memory and climb the leaderboard. Don't forget to choose your level</h4>
+
+        <!-- Tabs for Play Options -->
+        <div class="play-tabs">
+            <div class="tab active" data-target="loginPlay">Login & Play</div>
+            <div class="tab" data-target="guestPlay">Play as Guest</div>
+        </div>
+
+        <div class="play-content">
+            <!-- Login & Play -->
+            <div class="play-option-content active" id="loginPlay">
+                <p>Save your scores and join the leaderboard.</p>
+                <div class="difficulty-options">
+                    <button class="difficulty-btn" data-difficulty="Easy">Easy</button>
+                    <button class="difficulty-btn" data-difficulty="Medium">Medium</button>
+                    <button class="difficulty-btn" data-difficulty="Hard">Hard</button>
+                </div>
+                <button id="loginPlayBtn" onclick="handleLoginPlayButton()">Login to Play</button>
+            </div>
+
+            <!-- Play as Guest -->
+            <div class="play-option-content" id="guestPlay">
+                <p>Scores will not be saved</p>
+                <input type="text" name="playerName" id="playerName" placeholder="Enter your name" required/>
+                <div class="difficulty-options">
+                    <button class="difficulty-btn" data-difficulty="Easy">Easy</button>
+                    <button class="difficulty-btn" data-difficulty="Medium">Medium</button>
+                    <button class="difficulty-btn" data-difficulty="Hard">Hard</button>
+                </div>
+                <button id="guest-user-play" type="button" onclick="handleGuestUserPlay(event)">Play as Guest</button>
+            </div>
+        
+        </div>
+        <p id="messageP"></p>
+    </div>
+    
+    <script src="scripts/navbar.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/leaderboard.css">
+
+</head>
+<body>
+    <div id="navbar-container">
+        <div class="navbar">
+            <div class="nav-left">
+                <h2>MG</h2>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="leaderboard.html">Leaderboard</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="loginBtn">Login/Signup</button>
+                <button id="logoutBtn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="leaderboard-container" class="leaderboard-container" >
+        <h2 class="leaderboard-title">Leaderboard</h2>
+
+        <!-- Difficulty Selection Tabs -->
+        <div class="difficulty-tabs">
+            <button class="tab-btn active easy" onclick="displayLeaderboard('Easy')">Easy</button>
+            <button class="tab-btn medium" onclick="displayLeaderboard('Medium')">Medium</button>
+            <button class="tab-btn hard" onclick="displayLeaderboard('Hard')">Hard</button>
+        </div>
+
+        <!-- Leaderboard table -->
+        <table>
+            <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player Name</th>
+                <th>Score</th>
+            </tr>
+            </thead>
+            <tbody id="leaderboard-body"></tbody>
+        </table>
+    </div>
+
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/leaderboard.js"></script>
+</body>
+</html>

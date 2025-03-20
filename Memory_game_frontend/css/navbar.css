@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------------------------------- */
+
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background: rgba(25, 10, 50, 0.95); 
+    box-shadow: 0px 0px 12px rgba(255, 0, 255, 0.5); 
+    border-bottom: 2px solid rgba(255, 0, 255, 0.3); 
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0ff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff00ff;
+    text-shadow: 0px 0px 8px #ff00ff;
+}
+.nav-right {
+    margin-left: auto;
+}
+
+/* Buttons */
+.nav-right button {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #00ffff, #0000ff);
+    color: white;
+    box-shadow: 0px 0px 10px #00ffff;
+    transition: 0.3s;
+}
+
+.nav-right button:hover {
+    background: linear-gradient(45deg, #ff00ff, #ff0077);
+    box-shadow: 0px 0px 15px #ff00ff;
+}
+
+/* Logout Button */
+#logoutBtn {
+    display: none;
+    background: linear-gradient(45deg, #ff4444, #ff0000);
+    box-shadow: 0px 0px 10px #ff4444;
+}
+
+#logoutBtn:hover {
+    background: linear-gradient(45deg, #ff0000, #ff4444);
+    box-shadow: 0px 0px 15px #ff0000;
+}
+
+/* ------------------------------------------------------------------- */
+
+.message {
+    color: red; /* Default error color */
+    font-size: 14px;
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+}
+.message.success {
+    color: green;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* .popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+}
+
+.popup {
+    background: rgba(20, 10, 40, 0.98); 
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.8); 
+    border: 3px solid rgba(255, 0, 255, 0.5);
+}
+
+.popup h3 {
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0px 0px 8px rgba(255, 0, 255, 0.8);
+}
+.tab-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.tab-container button {
+    flex: 1; 
+    max-width: 120px; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(255, 0, 255, 0.7), rgba(0, 255, 255, 0.7));
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-container button:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 255, 1), rgba(0, 255, 255, 1));
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
+}
+
+.popup input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 0, 255, 0.5);
+    border-radius: 8px;
+    background: rgba(30, 10, 50, 0.9);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+}
+
+.popup input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.popup button {
+    width: 95%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(90deg, rgba(255, 0, 255, 0.7), rgba(0, 255, 255, 0.7));
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.5);
+}
+
+.popup button:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 255, 1), rgba(0, 255, 255, 1));
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 1);
+} */
+
+#loginForm button,
+#registerForm button {
+    margin-bottom: 15px; 
+}
+
+#registerForm button{
+    margin-top: 10px;
+}
+
+.nav-left h2{
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 0px 10px #8a2be2, 0px 0px 20px #ff00ff;
+    position: relative;
+}

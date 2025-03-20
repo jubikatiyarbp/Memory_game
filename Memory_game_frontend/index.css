@@ -1,0 +1,251 @@
+/* Import Google Font & Font Awesome for icons */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #221933;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    margin-top: 3rem;
+    width: 50%;
+    padding: 30px;
+    background: rgba(25, 20, 50, 0.9);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 0px 10px #8a2be2, 0px 0px 20px #ff00ff;
+    position: relative;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+#loginPlayBtn, #guest-user-play {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(45deg, #00ffff, #0000ff);
+    color: white;
+    box-shadow: 0px 0px 10px #00ffff;
+}
+
+#leaderboard-button {
+    background: linear-gradient(90deg, #0099ff, #33ccff);
+    color: white;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+}
+
+#leaderboard-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 153, 255, 1);
+}
+
+.icon {
+    position: absolute;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    animation: float 3s infinite ease-in-out;
+}
+
+.icon.coin {
+    top: 10px;
+    left: 10px;
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+.icon.cards {
+    top: 15px;
+    right: 15px;
+    color: lightblue;
+    text-shadow: 0 0 10px lightblue;
+}
+
+.icon.star {
+    bottom: 15px;
+    left: 20px;
+    color: lightcoral;
+    text-shadow: 0 0 10px lightcoral;
+}
+
+.plus {
+    position: absolute;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    animation: float 4s infinite alternate ease-in-out;
+}
+
+.plus:nth-child(1) {
+    top: 40px;
+    right: 30px;
+}
+
+.plus:nth-child(2) {
+    bottom: 40px;
+    left: 30px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.tab {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.difficulty-btn[data-difficulty="Easy"] {
+    background: linear-gradient(90deg, #00ff66, #00cc44);
+    box-shadow: 0 0 10px #00ff66;
+}
+
+.difficulty-btn[data-difficulty="Medium"] {
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+.difficulty-btn[data-difficulty="Hard"] {
+    background: linear-gradient(90deg, #ff0033, #cc0000);
+    box-shadow: 0 0 10px #ff0033;
+}
+
+.tab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px white;
+    background: #444;
+}
+
+
+#navbar-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#playerName {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #222;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.play-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background-color: #ff00ff;
+}
+
+.play-content {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.play-option-content {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(42, 35, 78, 0.9);
+    border-radius: 10px;
+    width: 300px;
+}
+
+.play-option-content.active {
+    display: block;
+}
+
+.difficulty-options {
+    margin: 10px 0;
+}
+
+.difficulty-btn {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.difficulty-btn:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}

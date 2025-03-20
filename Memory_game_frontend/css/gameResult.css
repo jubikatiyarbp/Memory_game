@@ -1,0 +1,88 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #1a1a2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container{
+    background: rgba(25, 20, 50, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.068);
+
+}
+.title-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 0px 0px 15px #ff00ff, 0px 0px 25px #8a2be2;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 40px;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    color: white;
+}
+
+.game-result {
+    background: rgba(30, 10, 50, 0.9);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.play-again-btn {
+    background: linear-gradient(90deg, #ff0066, #ff33cc);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+}
+
+.play-again-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 1);
+}
+
+.leaderboard-btn {
+    background: linear-gradient(90deg, #00ccff, #0066ff);
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.leaderboard-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+}
+
+.home-btn {
+    background: linear-gradient(90deg, #00ccff, #0066ff);
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.home-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+}

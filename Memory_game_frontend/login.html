@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="css/login.css"> 
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2 id="popupTitle">Login</h2>
+
+            <div class="tab-container">
+                <button onclick="showTab('login')" id="loginTab">Login</button>
+                <button onclick="showTab('register')" id="registerTab">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <div id="loginForm" data-testid="login-form">
+                <input type="text" id="loginUsername" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button onclick="login()">Login</button>
+            </div>
+
+            <!-- Register Form -->
+            <div id="registerForm" data-testid="register-form" style="display: none;">
+                <input type="text" id="registerUsername" placeholder="Username">
+                <input type="password" id="registerPassword" placeholder="Password">
+                <input type="email" id="registerEmail" placeholder="Email">
+                <button onclick="register()">Register</button>
+            </div>
+
+            <p id="message" class="message"></p>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+    <script src="scripts/navbar.js"></script>
+</body>
+</html>

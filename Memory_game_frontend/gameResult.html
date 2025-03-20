@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="css/gameResult.css">
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="title-container">
+            <h1>Memory Card Game</h1>
+        </div>
+
+        <div class="container">
+            <div id="game-result" class="game-result">
+                <h2 id="game-result-message"></h2>
+                <p id="final-score"></p>
+                <p id="final-time"></p>
+    
+                <div id="buttons">
+                <button id="play-again" class="play-again-btn" onclick="handlePlayAgainButton(event)">Play Again</button>
+                <button id="view-leaderboard" class="leaderboard-btn" onclick="handleViewLeaderboardButton()">View Leaderboard</button>
+                <button id="home" class="home-btn" onclick="handleHomeButton(event)">Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/gameResultScript.js"></script>
+
+</body>
+
+</html>
