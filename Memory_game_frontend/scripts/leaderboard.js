@@ -16,7 +16,6 @@ async function fetchLeaderboard(url, difficulty) {
     return data;
   } catch (error) {
     console.error("Error fetching leaderboard data:", error);
-    alert("Failed to load leaderboard");
   }
 }
 
