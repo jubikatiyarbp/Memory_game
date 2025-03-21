@@ -76,7 +76,7 @@ async function displayScore() {
   const isUserLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
   const isGuestUser = JSON.parse(sessionStorage.getItem("isGuestUser"));
   try {
-    if (isUserLoggedIn == false && isGuestUser == true) {
+    if (isGuestUser == true && (isUserLoggedIn == false || isUserLoggedIn == null)) {
       await displayGuestUserScore();
     } else {
       await displayLoggedUserScore();
